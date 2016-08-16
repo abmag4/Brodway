@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Albums</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-12" style="text-align: center">
+                <h1>Five-Finger Discount Records</h1>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">FFDR</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="albums.html">Latest Albums</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="jumbotron">
+        <h2 style="text-align:center"><a href="#">Submit New Album</a></h2>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel-group" id="collapse">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#collapse" href="#collapse-one">
+                                    Album Title and Artist
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-one" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <h4><b>Album: </b><i>Bangerz Only</i></h4>
+                                <h4><b>Artist: </b>GetHammerd</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#collapse" href="#collapse-two">
+                                    Track Information
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-two" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ol>
+                                    <li><i>Party Starter</i></li>
+                                    <li><i>Keep it Rolling</i></li>
+                                    <li><i>Don't Stop Can't Stop</i></li>
+                                    <li><i>Thend</i></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#collapse" href="#collapse-three">
+                                    What the Critics Say
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-three" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Following his previous three-track EP, GetHammerd's “Bangerz Only” is the hallmark of a skilful musician doing what he does best – creating a sound that you can’t pigeonhole. It’s a spellbinder full of rumbling tribal percussion, twinkling melodies and ambient textures  all executed with finesse – standing defiantly in the face of musical conformity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+</body>
+</html>
