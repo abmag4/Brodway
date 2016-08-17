@@ -34,8 +34,28 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal-label" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModal-label">Are you sure?</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to submit this album as is?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="jumbotron">
-        <h2 style="text-align:center"><a href="#">Submit New Album</a></h2>
+        <div class="form-group">
+            <button type="button" class="btn btn-primary col-xs-6 col-xs-offset-3" data-toggle="modal" data-target="#myModal">Submit New Album</button>
+        </div>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -91,6 +111,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="form-group">
+            <div class="btn-group col-md-offset-1" data-toggle="buttons">
+                <label class="btn btn-primary">
+                    <input type="radio" name="purchase" id="vinyl">Buy on Vinyl</input>
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="purchase" id="cd">Buy on CD</input>
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="purchase" id="download">Buy Digital Download</input>
+                </label>
+            </div>
+            <button class="btn btn-success">Purchase</button>
         </div>
     </div>
     <script src="scripts/jquery-3.1.0.min.js"></script>
